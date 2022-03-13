@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=.container, initial-scale=1.0">
+    <link rel="stylesheet" href= "../assets/css/courses.css">
+    <link rel="stylesheet" href = "../assets/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__label">
+                <span id="header__company-name">Trung tâm ngoại ngữ - tin học DLMT</span>
+                <a href="" id="header__login-btn">Đăng nhập</a>
+            </div>
+            <div class="header__navbar">
+                <ul class="header__navbar__list">
+                    <li class="header__navbar__item">
+                        <a href="./Index.html" class="header__navbar__link">Giới thiệu</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="./certification.html" class="header__navbar__link">Chứng chỉ</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="#/" class="header__navbar__link">Khóa học</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="./rate.html" class="header__navbar__link">Phản hồi</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="" class="header__navbar__link">Hướng dẫn sử dụng</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="main">
+            <div class="sidebar">
+                <ul class="sidebar__list">
+                    <li class="sidebar__item active">
+                        <a href="#/" class="sidebar__link"  onclick="activeItem(1)">Danh sách khóa học</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#/" class="sidebar__link" onclick="activeItem(2)">Đăng ký học</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#/" class="sidebar__link" onclick="activeItem(3)">Xem lịch học</a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="content">
+                <div class="courses-list function">
+                    <h3 class="courses-list__label">Danh sách chứng chỉ</h3>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th style="width: 250px">Khóa học</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Ngoại Ngữ cấp độ A1</td>
+                                <td>
+                                    <input type="button" value="Đăng ký" onclick="chooseCertificate('NNA1')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Ngoại Ngữ cấp độ A2</td>
+                                <td>
+                                    <input type="button" value="Đăng ký" onclick="chooseCertificate('NNA2')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Ngoại Ngữ cấp độ B1</td>
+                                <td>
+                                    <input type="button" value="Đăng ký" onclick="chooseCertificate('NNB1')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Ngoại Ngữ cấp độ B2</td>
+                                <td>
+                                    <input type="button" value="Đăng ký" onclick="chooseCertificate('NNB2')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Ngoại Ngữ cấp độ C1</td>
+                                <td>
+                                    <input type="button" value="Đăng ký" onclick="chooseCertificate('NNC1')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Ngoại Ngữ cấp độ C2</td>
+                                <td>
+                                    <input type="button" value="Đăng ký" onclick="chooseCertificate('NNC2')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Ứng dụng CNTT cơ bản</td>
+                                <td>
+                                    <input type="button" value="Đăng ký" onclick="chooseCertificate('THCB')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Ứng Dụng CNTT nâng cao</td>
+                                <td>
+                                    <input type="button" value="Đăng ký" onclick="chooseCertificate('THNC')">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="register-function function">
+                    <div class="register-choice">
+                        <input type= "button" id="register-choice__personal" class="active-btn" onclick="activeButton(1)" value="Đăng ký cá nhân">
+                        <input type= "button" id="register-choice__group" class="inactive-btn" onclick="activeButton(2)" value="Đăng ký nhóm">
+                    </div>
+                    <h3 class="register__label">Đăng ký cá nhân</h3>
+                    <div class="register-choice__personal">
+                        <form action="#" method="get" class="register__form">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="">Họ tên thí sinh:</label>
+                                    <input name="name" type="text">
+                                </div>
+                                <div class="col">
+                                    <label for="">CMND/CCCD:</label>
+                                    <input name="cmnd" type="text">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="">Ngày sinh:</label>
+                                    <input name="birthday" type="date">
+                                </div>
+                                <div class="col">
+                                    <label for="">Nơi sinh:</label>
+                                    <input name="hometown" type="text">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="">Giới tính:</label>
+                                    <div>
+                                        <input name="sex" type="radio" value="Nam"><label for="" style="margin-right: 16px;">Nam</label>
+                                        <input name="sex" type="radio" value="Nữ"><label for="">Nữ</label>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col">
+                                    <label for="">Số điện thoại:</label>
+                                    <input name="phone" type="tel">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="">Email:</label>
+                                    <input name="email" type="email">
+                                </div>
+                                <div class="col">
+                                    <label for="">Loại chứng chỉ</label>
+                                    <select name="certificate" id="certificate">
+                                        <option value="">Chọn loại chứng chỉ</option>
+                                        <option value="NNA1">Ngoại Ngữ cấp độ A1</option>
+                                        <option value="NNA2">Ngoại Ngữ cấp độ A2</option>
+                                        <option value="NNB1">Ngoại Ngữ cấp độ B1</option>
+                                        <option value="NNB2">Ngoại Ngữ cấp độ B2</option>
+                                        <option value="NNC1">Ngoại Ngữ cấp độ C1</option>
+                                        <option value="NNC2">Ngoại Ngữ cấp độ C2</option>
+                                        <option value="THCB">Ứng Dụng CNTT cơ bản</option>
+                                        <option value="THNC">Ứng Dụng CNTT nâng cao</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="">Lịch học</label>
+                                    <select name="courses" id="courses">
+                                        <option value="">Chọn lịch học</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row right">
+                                <input type= "submit" class="active-btn" id="register__btn" value="Đăng ký">
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="register-choice__group">
+                        <label style="margin-right: 16px;" for="">Upload danh sách học viên:</label>
+                        <input type= "file">
+                        <div class="row right">
+                            <input type= "submit" class="active-btn" id="register__btn" value="Đăng ký">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="schedule function">
+                    <h3 class="schedule__label">Lịch học</h3>
+                    <div id="schedule__searchbar">
+                        <label style="margin-right: 16px;" for="">Nhập CMND/CCCD:</label>
+                        <input type="text" name="cmnd" id="schedule__search">
+                        <input type="button" value="Tìm" id="schedule__search-btn">
+                    </div>
+                    
+                    <div class="student-info">
+                        <div class="student-name">
+                            <label for="">Họ tên học viên:</label>
+                            <p id="student-name">Nguyễn Hoài Duy</p>
+                        </div>
+                        <div class="student-id">
+                            <label for="">CMND/CCCD:</label>
+                            <p id="student-id">079201018461</p>
+                        </div>          
+                    </div>
+
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th style="width: 250px">Khóa học</th>
+                                <th style="width: 100px">Thứ</th>
+                                <th style="width: 100px">Giờ học</th>
+                                <th style="width: 150px">Bắt đầu</th>
+                                <th>Phòng học</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>1</th>
+                                <th style="width: 250px">Ứng Dụng CNTT cơ bản</th>
+                                <th style="width: 100px">Tư</th>
+                                <th style="width: 100px">7:30</th>
+                                <th style="width: 150px">03/09/2021</th>
+                                <th>B22</th>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/main.js"></script>
+    <script>
+        function chooseCertificate(id){
+        activeItem(2);
+        let e = document.getElementsByTagName("option");
+        for(var i = 1;i <e.length;i++){
+            if(e[i].value == id){
+                e[i].selected = "selected";
+                break;
+            }
+    }
+}
+    </script>
+</body> 
+</html>

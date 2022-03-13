@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=.container, initial-scale=1.0">
+    <link rel="stylesheet" href = "../../assets/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__label">
+                <span id="header__company-name">Trung tâm ngoại ngữ - tin học DLMT</span>
+                <a href="" id="header__login-btn">Staff</a>
+            </div>
+            <div class="header__navbar">
+                <ul class="header__navbar__list">
+                    <li class="header__navbar__item">
+                        <a href="./certification.html" class="header__navbar__link">Chứng chỉ</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="./course.html" class="header__navbar__link">Khóa học</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="./candidates.html" class="header__navbar__link">Thí sinh</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="./student.html" class="header__navbar__link">Học viên</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="./data.html" class="header__navbar__link">Dữ liệu</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="#/" class="header__navbar__link">Tài khoản</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="main">
+            <div class="sidebar">
+                <ul class="sidebar__list">
+                    <li class="sidebar__item active">
+                        <a href="#/" class="sidebar__link" onclick="activeItem(1)">Cập nhật thông tin</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#/" class="sidebar__link" onclick="activeItem(2)">Đổi mật khẩu</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="update-info function">
+                    <h3 class="update-info__label">Cập nhật thông tin</h3>
+                    <form action="#" method="get" class="update-info__form"  style="margin-top: 16px;">
+                        <div class="row">
+                            <div class="col">
+                                <label for="">Mã nhân viên:</label>
+                                <input name="staff-id" type="text">
+                            </div>
+                            <div class="col">
+                                <label for="">Họ tên nhân viên:</label>
+                                <input name="staff-named" type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="">CMND/CCCD:</label>
+                                <input name="staff-cmnd" type="text">
+                            </div>
+                            <div class="col">
+                                <label for="">Số điện thoại:</label>
+                                <input name="staff-phone" type="tel">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="">Giới tính:</label>
+                                <div>
+                                    <input name="sex" type="radio" value="Nam"><label for="" style="margin-right: 16px;">Nam</label>
+                                    <input name="sex" type="radio" value="Nữ"><label for="">Nữ</label>
+                                </div>
+                                
+                            </div>
+                            <div class="col">
+                                <label for="">Ngày sinh:</label>
+                                <input name="staff-bd" type="date">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="">Email:</label>
+                                <input name="email" type="email">
+                            </div>
+                            <div class="col">
+                                <label for="">Chức vụ:</label>
+                                <input name="staff-position" type="text">
+                            </div>
+                        </div>
+                        <div class="row right">
+                            <input type= "submit" id="register__btn" class="active-btn" value="Đăng ký">
+                        </div>
+                    </form>
+                </div>
+                <div class="change-password function" style="display: none;">
+                    <h3 class="update-info__label">Đổi mật khẩu</h3>
+                    <form action="#" method="get" class="update-info__form" style="margin-top: 16px;">
+                        <div class="row">
+                            <div class="col">
+                                <label for="">Mật khẩu cũ:</label>
+                                <input name="old-pass" type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="">Mật khẩu mới:</label>
+                                <input name="new-pass" type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="">Nhập lại mật khẩu mới:</label>
+                                <input name="confirm-new-pass" type="text">
+                            </div>
+                        </div>
+                        
+                        <div class="row right">
+                            <input type= "submit" id="register__btn" class="active-btn" value="Đăng ký">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>

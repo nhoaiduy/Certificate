@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=.container, initial-scale=1.0">
+    <link rel="stylesheet" href = "../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/certification.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__label">
+                <span id="header__company-name">Trung tâm ngoại ngữ - tin học DLMT</span>
+                <a href="" id="header__login-btn">Admin</a>
+            </div>
+            <div class="header__navbar">
+                <ul class="header__navbar__list">
+                    <li class="header__navbar__item">
+                        <a href="#/" class="header__navbar__link">Dữ liệu</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="./account.html" class="header__navbar__link">Tài khoản</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="main">
+            <div class="sidebar">
+                <ul class="sidebar__list">
+                    <li class="sidebar__item active">
+                        <a href="#/" class="sidebar__link" onclick="activeItem(1)">Sao lưu dữ liệu</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#/" class="sidebar__link" onclick="activeItem(2)">Phục hồi dữ liệu</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="backup-function function">
+                    <h3 class="backup-function__label" style="margin-bottom: 16px;">Sao lưu dữ liệu</h3>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Từ:</label>
+                            <input name="start" type="date">
+                        </div>
+                        <div class="col">
+                            <label for="">Đến:</label>
+                            <input name="end" type="date">
+                        </div>
+                    </div>
+                    
+                    <div class="row right">
+                        <input type= "submit" class="active-btn" value="Sao lưu">
+                    </div>
+                    
+                </div>
+                <div class="recovery-function function" style="display: none;">
+                    <h3 class="recovery-function__label" style="margin-bottom: 16px;">Phục hồi dữ liệu</h3>
+                    <div class="row">
+                        <div class="col">
+                            <label for="">Từ:</label>
+                            <input name="start" type="date">
+                        </div>
+                        <div class="col">
+                            <label for="">Đến:</label>
+                            <input name="end" type="date">
+                        </div>
+                    </div>
+                    
+                    <div class="row right">
+                        <input type= "submit" class="active-btn" value="Phục hồi">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>

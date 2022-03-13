@@ -1,0 +1,211 @@
+.search-function{
+    display: flex;
+    flex-direction: column;
+}
+
+.search-function-top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.search-function__label{
+    
+}
+
+#search-function__input{
+    margin: 0 16px;
+    padding: 6px 10px;
+}
+
+#search-function__btn{
+    background-color: rgb(241, 53, 53);
+    color: #fff;
+    padding: 6px 10px;
+}
+
+.search-function-bot{
+    
+}
+
+.search-function__result{
+    margin-bottom: 16px;
+    display: block;
+}
+
+.search-function__noti{
+    
+}
+
+.search-function-bot  table{
+    border-collapse: collapse;
+    margin-top: 16px;
+}
+
+.search-function-bot td{
+    
+}
+
+.search-function--not-found{
+    display: none;
+}
+
+.search-function--found{
+    display: block
+}
+
+.courses-list{
+    
+}
+
+.courses-list__label{
+    margin-bottom: 16px;
+}
+
+.courses-list > table{
+    border-collapse: collapse;
+}
+
+.course-detail{
+    margin-top: 16px;
+    display: none;
+}
+
+.course-detail .course-info{
+    margin: 16px 0;
+}
+
+.course-detail table{
+    border-collapse: collapse;
+}
+
+.create_course{
+    display: none;
+}
+
+.create_course table{
+    border-collapse: collapse;
+    margin: 16px 0;
+}
+
+.register-function{
+    display: none;
+}
+
+.register__label{
+    margin-bottom: 16px;
+}
+
+.register__form{
+    width: fit-content;
+}
+
+.register-function .row{
+
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.register-function .col{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 32px;
+    align-items: center;
+}
+
+.register-function .col input{
+    padding: 6px 16px;
+}
+
+.row.right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#register__btn{
+    margin-right: 32px;
+}
+
+.register-choice{
+    margin: 16px 0;
+}
+
+.register-choice__personal{
+    display: block;
+}
+
+.register-choice__group{
+    display: none;
+}
+
+.schedule{
+    display: block;
+}
+
+.schedule__label{
+    
+}
+
+#schedule__searchbar{
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+}
+
+#schedule__search{
+    padding: 6px 16px;
+}
+
+#schedule__search-btn{
+    padding: 8px 16px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: rgb(241, 53, 53);
+}
+
+.student-info{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.student-name{
+    margin-right: 16px;
+    display: flex;
+}
+
+#student-name{
+    margin-left: 16px;
+    
+}
+
+.student-id{
+    display: flex;
+}
+
+#student-id{
+    margin-left: 16px;
+}
+
+.schedule table{
+    border-collapse: collapse;
+    display: block;
+}
+
+.create_course{
+    width: fit-content;
+}
+
+.add-schedule{
+    display: none;
+}
+
+.statistic{
+    display: none;
+}
+
+.statistic table{
+    border-collapse: collapse;
+    margin-top: 16px;
+}

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=.container, initial-scale=1.0">
+    <link rel="stylesheet" href= "../../assets/css/courses.css">
+    <link rel="stylesheet" href = "../../assets/css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__label">
+                <span id="header__company-name">Trung tâm ngoại ngữ - tin học DLMT</span>
+                <a href="" id="header__login-btn">Staff</a>
+            </div>
+            <div class="header__navbar">
+                <ul class="header__navbar__list">
+                    <li class="header__navbar__item">
+                        <a href="./certification.html" class="header__navbar__link">Chứng chỉ</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="#/" class="header__navbar__link">Khóa học</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="./candidates.html" class="header__navbar__link">Thí sinh</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="./student.html" class="header__navbar__link">Học viên</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="./data.html" class="header__navbar__link">Dữ liệu</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="./account.html" class="header__navbar__link">Tài khoản</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="main">
+            <div class="sidebar">
+                <ul class="sidebar__list">
+                    <li class="sidebar__item active">
+                        <a href="#/" class="sidebar__link" onclick="activeItem(1)">Tra cứu khóa học</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#/" class="sidebar__link"  onclick="activeItem(2)">Danh sách khóa học</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#/" class="sidebar__link" onclick="activeItem(3)">Tạo khóa học học</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#/" class="sidebar__link" onclick="activeItem(4)">Thống kê học viên</a>
+                    </li>
+                    
+                    
+                </ul>
+            </div>
+            <div class="content">
+                <div class="search-function function">
+                    <div class="search-function-top">
+                        <h3 class="search-function__label">Mã khóa học:</h3>
+                        <input type="text" id="search-function__input" placeholder="Nhập mã khóa học">
+                        <input type="button" value="Tìm" id="search-function__btn">
+                    </div>
+                    <div class="search-function-bot">
+                        <h3 class="search-function__result">Kết quả</h3>
+                        <div class="search-function__noti">
+                            <div class="search-function--not-found">
+                                Không tìm thấy!!
+                            </div>
+                            <div class="search-function--found">
+                                <div class="search-function__course-info">
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="">Mã khóa học:</label>
+                                            <p id="course-id">7</p>
+                                        </div>
+                                        <div class="col">
+                                            <label for="">Tên khóa học:</label>
+                                            <p id="couse-name">Ứng Dụng CNTT cơ bản</p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="">Loại chứng chỉ:</label>
+                                            <p id="certificate-type">Ứng Dụng CNTT cơ bản</p>
+                                        </div>
+                                        <div class="col">
+                                            <label for="">Thời lượng:</label>
+                                            <p id="course-time">15</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3>Lịch học</h3>
+                                <table border="1">
+                                    <thead>
+                                        <tr>
+                                            <th>STT</th>
+                                            <th style="width: 100px">Giờ học</th>
+                                            <th style="width: 100px">Thứ</th>
+                                            <th style="width: 100px">Khai giảng</th>
+                                            <th style="width: 150px">Ngày thi dự kiến</th>
+                                            <th></th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td>
+                                                <input type="button" value="Sửa">
+                                            </td>
+                                            <td>
+                                                <input type="button" value="Xóa">
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            
+                        </div>       
+                    </div>
+                </div>
+                <div class="courses-list function">
+                    <h3 class="courses-list__label">Danh sách các khóa học</h3>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th style="width: 250px">Khóa học</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Ngoại Ngữ cấp độ A1</td>
+                                <td>
+                                    <input type="button" value="Chi tiết">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Ngoại Ngữ cấp độ A2</td>
+                                <td>
+                                    <input type="button" value="Chi tiết">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Ngoại Ngữ cấp độ B1</td>
+                                <td>
+                                    <input type="button" value="Chi tiết">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Ngoại Ngữ cấp độ B2</td>
+                                <td>
+                                    <input type="button" value="Chi tiết">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Ngoại Ngữ cấp độ C1</td>
+                                <td>
+                                    <input type="button" value="Chi tiết">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Ngoại Ngữ cấp độ C2</td>
+                                <td>
+                                    <input type="button" value="Chi tiết">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Ứng dụng CNTT cơ bản</td>
+                                <td>
+                                    <input type="button" value="Chi tiết">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Ứng Dụng CNTT nâng cao</td>
+                                <td>
+                                    <input type="button" value="Chi tiết">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="course-detail">
+                        <h3>Chi tiết khóa học</h3>
+                        <div class="course-info">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="">Mã khóa học:</label>
+                                    <p id="course-id"></p>
+                                </div>
+                                <div class="col">
+                                    <label for="">Tên khóa học:</label>
+                                    <p id="couse-name"></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="">Loại chứng chỉ:</label>
+                                    <p id="certificate-type"></p>
+                                </div>
+                                <div class="col">
+                                    <label for="">Thời lượng:</label>
+                                    <p id="course-time"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <label for="">Lịch học</label>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th style="width: 100px">Giờ học</th>
+                                    <th style="width: 100px">Thứ</th>
+                                    <th style="width: 100px">Khai giảng</th>
+                                    <th style="width: 150px">Ngày thi dự kiến</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>
+                                        <input type="button" value="Sửa">
+                                    </td>
+                                    <td>
+                                        <input type="button" value="Xóa">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="create_course function">
+                    <form action="#" method="get" class="add__form">
+                        <div class="row">
+                            <div class="col">
+                                <label for="">Mã khóa học:</label>
+                                <input name="sbd" type="text">
+                            </div>
+                            <div class="col">
+                                <label for="">Tên khóa học:</label>
+                                <input name="svs" type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="">Thời lượng:</label>
+                                <input name="test" type="number">
+                            </div>
+                            <div class="col">
+                                <label for="">Loại chứng chỉ</label>
+                                <select name="certificate" id="certificate">
+                                    <option value="">Chọn loại chứng chỉ</option>
+                                    <option value="NNA1">Ngoại Ngữ cấp độ A1</option>
+                                    <option value="NNA2">Ngoại Ngữ cấp độ A2</option>
+                                    <option value="NNB1">Ngoại Ngữ cấp độ B1</option>
+                                    <option value="NNB2">Ngoại Ngữ cấp độ B2</option>
+                                    <option value="NNC1">Ngoại Ngữ cấp độ C1</option>
+                                    <option value="NNC2">Ngoại Ngữ cấp độ C2</option>
+                                    <option value="THCB">Ứng Dụng CNTT cơ bản</option>
+                                    <option value="THNC">Ứng Dụng CNTT nâng cao</option>
+                                </select>
+                            </div>
+                        </div>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>STT</th>
+                                    <th style="width: 100px">Giờ học</th>
+                                    <th style="width: 100px">Thứ</th>
+                                    <th style="width: 100px">Khai giảng</th>
+                                    <th style="width: 150px">Ngày thi dự kiến</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                        <div class="row">
+                            <input type="button" class="active-btn" onclick="addSchedule(1)" id="add-schedule__btn" value="Thêm lịch học">
+                        </div>
+                        <div class="row right">
+                            <input type= "submit" class="active-btn" value="Lưu">
+                        </div>
+                    </form>
+                    <div class="add-schedule">
+                        <div class="row">
+                            <div class="col">
+                                <label for="">Giờ học:</label>
+                                <input name="giohoc" type="time">
+                            </div>
+                            <div class="col">
+                                <label for="">Thứ:</label>
+                                <input name="thu" type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="">Khai giảng:</label>
+                                <input name="khaigiang" type="date">
+                            </div>
+                            <div class="col">
+                                <label for="">Ngày thi dự kiến:</label>
+                                <input name="ntdk" type="date">
+                            </div>
+                        </div>
+                        <div class="row right">
+                            <input type="button" value="Đóng" onclick="addSchedule(0)" class="inactive-btn">
+                            <input type="button" value="Thêm"  class="active-btn">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="statistic function">
+                    <h3 class="statistic__label">Thống kê chứng chỉ</h3>
+
+
+
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th id="type" style="width: 250px">Khóa học</th>
+                                <th style="width: 100px">Số lượng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Ngoại Ngữ cấp độ A1</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Ngoại Ngữ cấp độ A2</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Ngoại Ngữ cấp độ B1</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Ngoại Ngữ cấp độ B2</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Ngoại Ngữ cấp độ C1</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Ngoại Ngữ cấp độ C2</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Ứng dụng CNTT cơ bản</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Ứng Dụng CNTT nâng cao</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" colspan="2">Tổng cộng</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/main.js"></script>
+    <script>
+        function addSchedule(n){
+            let e = document.getElementsByClassName("add-schedule");
+            if(n==0){
+                e[0].style.display = "none";
+                console.log(e);
+            }else if(n==1){
+                e[0].style.display = "block";
+                console.log(e);
+            }
+        }
+    </script>
+</body> 
+</html>

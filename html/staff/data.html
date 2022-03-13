@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=.container, initial-scale=1.0">
+    <link rel="stylesheet" href = "../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/certification.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__label">
+                <span id="header__company-name">Trung tâm ngoại ngữ - tin học DLMT</span>
+                <a href="" id="header__login-btn">Staff</a>
+            </div>
+            <div class="header__navbar">
+                <ul class="header__navbar__list">
+                    <li class="header__navbar__item">
+                        <a href="./certification.html" class="header__navbar__link">Chứng chỉ</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="./course.html" class="header__navbar__link">Khóa học</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="./candidates.html" class="header__navbar__link">Thí sinh</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="./student.html" class="header__navbar__link">Học viên</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="#/" class="header__navbar__link">Dữ liệu</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="./account.html" class="header__navbar__link">Tài khoản</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="main">
+            <div class="sidebar">
+                <ul class="sidebar__list">
+                    <li class="sidebar__item active">
+                        <a href="#/" class="sidebar__link" onclick="activeItem(1)">Tra cứu dữ liệu</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#/" class="sidebar__link" onclick="activeItem(2)">Trích xuất dữ liệu</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="search-function function">
+                    <h3 class="search-function__label" style="margin-bottom: 16px;">Tra cứu dữ liệu</h3>
+                    <div class="search-function-top">
+                        <h3 class="search-function__label">Mã thí sinh:</h3>
+                        <input type="text" id="search-function__input" placeholder="Nhập mã thí sinh">
+                        <input type="button" value="Tìm" id="search-fuction__btn">
+                    </div>
+                    <div class="search-function-bot">
+                        <h3 class="search-function__result">Kết quả</h3>
+                        <span class="search-function__noti">Không tìm thấy!!</span>
+                        <div class="search-function__result-content" style="display: none;">
+                            <div class="row">
+                                <div class="col">
+                                    <label for="">Mã thí sinh:</label>
+                                    <p id="candidate-id"></p>
+                                </div>
+                                <div class="col">
+                                    <label for="">Họ tên thí sinh:</label>
+                                    <p id="candidate-name"></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="">CMND/CCCD:</label>
+                                    <p id="candidate-cmnd"></p>
+                                </div>
+                                <div class="col">
+                                    <label for="">Ngày sinh:</label>
+                                    <p id="candidate-bd"></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="">Nơi sinh:</label>
+                                    <p id="candidate-ht"></p>
+                                </div>
+                                <div class="col">
+                                    <label for="">Số điện thoại:</label>
+                                    <p id="candidate-phone"></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="">Giới tính:</label>
+                                    <p id="candidate-sex"></p>
+                                </div>
+                                <div class="col">
+                                    <label for="">Email:</label>
+                                    <p id="candidates-email"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="enucleate function" style="display: none;">
+                    <h3 class="enucleate__label">Trích xuất dữ liệu</h3>
+                    
+                        <div class="row">
+                            <div class="col">
+                                <label for="">Từ:</label>
+                                <input name="start" type="date">
+                            </div>
+                            <div class="col">
+                                <label for="">Đến:</label>
+                                <input name="end" type="date">
+                            </div>
+                        </div>
+                        
+                        <div class="row right">
+                            <input type= "submit" class="active-btn" value="Trích xuất">
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="../../assets/js/main.js"></script>
+</body>
+</html>

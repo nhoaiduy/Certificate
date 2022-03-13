@@ -1,0 +1,204 @@
+.search-function{
+    display: flex;
+    flex-direction: column;
+}
+
+.result-function{
+    display: blocks;
+}
+
+.search-function-top, .result-function-top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.search-function__label{
+    
+}
+
+#search-function__input{
+    margin: 0 16px;
+    padding: 6px 10px;
+}
+
+#search-fuction__btn{
+    background-color: rgb(241, 53, 53);
+    color: #fff;
+    padding: 6px 10px;
+}
+
+.search-function-bot, .result-function-bot{
+    
+}
+
+.search-function__result, .result-function__result{
+    margin-bottom: 16px;
+    display: block;
+}
+
+.search-function__noti, .result-function__noti{
+    display: none;
+}
+
+.search-function-bot > table, .result-function-bot>table{
+    border-collapse: collapse;
+    display: block;
+}
+
+.search-function-bot td{
+    width: 200px;
+    height: 30px;
+}
+
+.certification-list{
+    display: none;
+}
+
+.certification-list__label{
+    
+}
+
+.certification-list > table{
+    border-collapse: collapse;
+    margin: 16px 0;
+}
+
+.register-function, .add-function{
+    display: none;
+}
+
+.register__label, .add__label{
+    margin-bottom: 16px;
+}
+
+.register__form, .add__form{
+    width: fit-content;
+}
+
+
+#register__btn, .active-btn{
+    padding: 8px 16px;
+    background-color: rgb(241, 53, 53);
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 32px;
+}
+
+.test-schedule, .statistic{
+    display: none;
+}
+
+.test-schedule__label, .statistic__label{
+    margin-bottom: 16px;
+}
+
+#test-schedule__searchbar{
+    margin: 16px 0;
+    display: flex;
+    align-items: center;
+}
+
+#test-schedule__search{
+    padding: 6px 16px;
+}
+
+#test-schedule__search-btn{
+    padding: 8px 16px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: rgb(241, 53, 53);
+}
+
+.candidates-info{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.candidates-name{
+    margin-right: 16px;
+    display: flex;
+}
+
+#candidates-name{
+    margin-left: 16px;
+}
+
+.candidates-id{
+    display: flex;
+}
+
+#candidates-id{
+    margin-left: 16px;
+}
+
+.test-schedule table{
+    display: block;
+    border-collapse: collapse;
+}
+
+.statistic table{
+    border-collapse: collapse;
+}
+
+.history{
+    display: block;
+}
+
+.history__label{
+    margin-bottom: 16px;
+}
+
+#history__searchbar{
+    display: flex;
+    align-items: center;
+}
+
+#history__search {
+    padding: 6px 16px;
+}
+
+#history__search-btn{
+    padding: 8px 16px;
+    background-color: rgb(241, 53, 53);
+    outline: none;
+    border: none;
+    color: #fff;
+}
+
+.history table{
+    margin-top: 16px;
+    border-collapse: collapse;
+}
+
+.history td{
+    width: 100px;
+}
+
+.add-certification-type-modal{
+    display: none;
+}
+
+.add-certification-type-modal>.modal{
+    width: fit-content;
+    height: auto;
+    background-color: #fff;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.modal__label{
+    margin-bottom: 16px;
+}
+
+.add-group{
+    width: fit-content;
+}
+
+.add-group--wrapper{
+    margin: 16px 0;
+}
+

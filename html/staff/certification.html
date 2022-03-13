@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=.container, initial-scale=1.0">
+    <link rel="stylesheet" href = "../../assets/css/main.css">
+    <link rel="stylesheet" href= "../../assets/css/certification.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header__label">
+                <span id="header__company-name">Trung tâm ngoại ngữ - tin học DLMT</span>
+                <a href="" id="header__login-btn">Staff</a>
+            </div>
+            <div class="header__navbar">
+                <ul class="header__navbar__list">
+                    <li class="header__navbar__item">
+                        <a href="#/" class="header__navbar__link">Chứng chỉ</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="./course.html" class="header__navbar__link">Khóa học</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="./candidates.html" class="header__navbar__link">Thí sinh</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="./student.html" class="header__navbar__link">Học viên</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="./data.html" class="header__navbar__link">Dữ liệu</a>
+                    </li>
+                    <li class="header__navbar__item">
+                        <a href="./account.html" class="header__navbar__link">Tài khoản</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="main">
+            <div class="sidebar">
+                <ul class="sidebar__list">
+                    <li class="sidebar__item active">
+                        <a href="#/" class="sidebar__link" onclick="activeItem(1)">Tra cứu chứng chỉ</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#/" class="sidebar__link" onclick="activeItem(2)">Danh sách loại chứng chỉ</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#/" class="sidebar__link" onclick="activeItem(3)">Thêm chứng chỉ</a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a href="#/" class="sidebar__link" onclick="activeItem(4)">Thống kê chứng chỉ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="search-function function">
+                    <div class="search-function-top">
+                        <h3 class="search-function__label">Số vào sổ:</h3>
+                        <input type="text" id="search-function__input" placeholder="Nhập số vào sổ">
+                        <input type="button" value="Tìm" id="search-fuction__btn">
+                    </div>
+                    <div class="search-function-bot">
+                        <h3 class="search-function__result">Kết quả</h3>
+                        <span class="search-function__noti">Không tìm thấy!!</span>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th>Họ tên thí sinh</th>
+                                    <th>CMND</th>
+                                    <th>Ngày thi</th>
+                                    <th>Số quyết định công nhận</th>
+                                    <th>Số vào sổ</th>
+                                    <th>Số hiệu</th>
+                                    <th>Loại chứng chỉ</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="search-td1">Nguyễn Hoài Duy</td>
+                                    <td id="search-td2">097201018461</td>
+                                    <td id="search-td3">01/02/2022</td>
+                                    <td id="search-td4">0001/QD-01</td>
+                                    <td id="search-td5">0000001</td>
+                                    <td id="search-td6">A01234567</td>
+                                    <td id="search-td7">Ứng Dụng CNTT cơ bản</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="certification-list function">
+                    <h3 class="certification-list__label">Danh sách chứng chỉ</h3>
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th style="width: 250px">Loại chứng chỉ</th>
+                                <th style="width: 100px">Phân loại</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Ngoại Ngữ cấp độ A1</td>
+                                <td>Ngoại Ngữ</td>
+                                <td>
+                                    <input type="button" value="Xóa" onclick="chooseCertificate('NNA1')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Ngoại Ngữ cấp độ A2</td>
+                                <td>Ngoại Ngữ</td>
+                                <td>
+                                    <input type="button" value="Xóa" onclick="chooseCertificate('NNA2')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Ngoại Ngữ cấp độ B1</td>
+                                <td>Ngoại Ngữ</td>
+                                <td>
+                                    <input type="button" value="Xóa" onclick="chooseCertificate('NNB1')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Ngoại Ngữ cấp độ B2</td>
+                                <td>Ngoại Ngữ</td>
+                                <td>
+                                    <input type="button" value="Xóa" onclick="chooseCertificate('NNB2')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Ngoại Ngữ cấp độ C1</td>
+                                <td>Ngoại Ngữ</td>
+                                <td>
+                                    <input type="button" value="Xóa" onclick="chooseCertificate('NNC1')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Ngoại Ngữ cấp độ C2</td>
+                                <td>Ngoại Ngữ</td>
+                                <td>
+                                    <input type="button" value="Xóa" onclick="chooseCertificate('NNC2')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Ứng dụng CNTT cơ bản</td>
+                                <td>Tin Học</td>
+                                <td>
+                                    <input type="button" value="Xóa" onclick="chooseCertificate('THCB')">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Ứng Dụng CNTT nâng cao</td>
+                                <td>Tin Học</td>
+                                <td>
+                                    <input type="button" value="Xóa" onclick="chooseCertificate('THNC')">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <input type="button" value="Thêm loại chứng chỉ" class="active-btn"  onclick="showModal()">
+                    <div class="add-certification-type-modal">
+                        <div class="modal">
+                            <h3 class="modal__label">Thêm loại chứng chỉ</h3>
+                            <div class="row">
+                                <div class="col">
+                                    <label for="">Tên loại chứng chỉ:</label>
+                                    <input name="name" type="text">
+                                </div>
+                                <div class="col">
+                                    <label for="">Phân loại:</label>
+                                    <input name="phanloai" type="text">
+                                </div>
+                            </div>
+                            <div class="row right">
+                                <input type="button" value="Đóng" class="inactive-btn" onclick="hideModal()">
+                                <input type="button" value="Thêm" class="active-btn">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="add-function function">
+                    <h3 class="add__label">Thêm chứng chỉ</h3>
+                    <form action="#" method="get" class="add__form">
+                        <div class="row">
+                            <div class="col">
+                                <label for="">Số báo danh:</label>
+                                <input name="sbd" type="text">
+                            </div>
+                            <div class="col">
+                                <label for="">Số vào sổ:</label>
+                                <input name="svs" type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="">Họ tên thí sinh:</label>
+                                <input name="name" type="text">
+                            </div>
+                            <div class="col">
+                                <label for="">Số quyết định công nhận:</label>
+                                <input name="nord" type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="">CMND/CCCD:</label>
+                                <input name="cmnd" type="text">
+                                
+                            </div>
+                            <div class="col">
+                                <label for="">Số hiệu:</label>
+                                <input name="phone" type="tel">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label for="">Ngày thi:</label>
+                                <input name="test" type="date">
+                            </div>
+                            <div class="col">
+                                <label for="">Loại chứng chỉ</label>
+                                <select name="certificate" id="certificate">
+                                    <option value="">Chọn loại chứng chỉ</option>
+                                    <option value="NNA1">Ngoại Ngữ cấp độ A1</option>
+                                    <option value="NNA2">Ngoại Ngữ cấp độ A2</option>
+                                    <option value="NNB1">Ngoại Ngữ cấp độ B1</option>
+                                    <option value="NNB2">Ngoại Ngữ cấp độ B2</option>
+                                    <option value="NNC1">Ngoại Ngữ cấp độ C1</option>
+                                    <option value="NNC2">Ngoại Ngữ cấp độ C2</option>
+                                    <option value="THCB">Ứng Dụng CNTT cơ bản</option>
+                                    <option value="THNC">Ứng Dụng CNTT nâng cao</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row right">
+                            <input type= "submit" id="register__btn" value="Lưu">
+                        </div>
+                    </form>
+                    <div class="add-group">
+
+                        <h3>Thêm nhiều chứng chỉ</h3>
+                        <div class="add-group--wrapper">
+                            <label style="margin-right: 16px;" for="">Upload danh sách học viên:</label>
+                            <input type= "file">
+                            <div class="row right">
+                                <input type= "submit" class="active-btn" id="register__btn" value="Thêm">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="statistic function">
+                    <h3 class="statistic__label">Thống kê chứng chỉ</h3>
+
+
+
+                    <table border="1">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th id="type" style="width: 250px">Loại chứng chỉ</th>
+                                <th style="width: 100px">Số lượng</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Ngoại Ngữ cấp độ A1</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Ngoại Ngữ cấp độ A2</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Ngoại Ngữ cấp độ B1</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Ngoại Ngữ cấp độ B2</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Ngoại Ngữ cấp độ C1</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Ngoại Ngữ cấp độ C2</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>Ứng dụng CNTT cơ bản</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>Ứng Dụng CNTT nâng cao</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" colspan="2">Tổng cộng</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="../../assets/js/main.js"></script>
+    <script>
+        function chooseCertificate(id){
+            activeItem(3);
+            let e = document.getElementsByTagName("option");
+            for(var i = 1;i <e.length;i++){
+                if(e[i].value == id){
+                    e[i].selected = "selected";
+                    break;
+                }
+            }
+        }
+        function showModal(){
+            let e = document.getElementsByClassName("add-certification-type-modal");
+            e[0].style.display = "flex";
+            console.log(typeof e[0]);
+        }
+
+        function hideModal(){
+            let e = document.getElementsByClassName("add-certification-type-modal");
+            e[0].style.display = "none";
+        }
+
+    </script>
+</body>
+</html>

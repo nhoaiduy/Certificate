@@ -1,0 +1,21 @@
+.rate{
+    width: fit-content;
+}
+
+.rate--top{
+    display: flex;
+    margin-bottom: 16px;
+}
+
+#rate__label{
+    margin-right: 16px;
+}
+
+#rate__input{
+    width: 500px;
+    height: 300px;
+}
+
+.row.right{
+    float: right;
+}
